@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
- 
+import 'screens/country_list_screen.dart';
+
 void main() {
   runApp(EuropeCountriesApp());
 }
@@ -12,6 +13,8 @@ class EuropeCountriesApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-     );
+      home: CountryListScreen(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
